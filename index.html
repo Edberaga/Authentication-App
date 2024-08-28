@@ -10,6 +10,34 @@
 </head>
 
 <body>
+  <main>
+    <h2>Authentication App</h2>
+    <img src="login.png" alt="Authentication" height="300px">
+
+    <form class="auth-form">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" name="name" id="username">
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+      </div>
+      <div class="register" style="display: none;">
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password">
+      </div>
+
+      <button type="button" onclick="authenticate()">Submit</button>
+    </form>
+
+    <p class="register" style="display: none;">
+      Already register? Click here to <span onclick="moveToLogin()">Login</span>
+    </p>
+    <p class="login" style="display: block;">
+      Haven't register? Click here to <span onclick="moveToRegister()">Register</span>
+    </p>
+  </main>
   <script src="script.js"></script>
 </body>
 
